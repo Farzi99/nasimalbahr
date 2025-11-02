@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nasim Al Bahr Trading L.L.C</title>
+<style>
+  :root{
+    --navy:#003366; /* from logo palette */
+    --blue:#00509e; /* accent */
+    --text:#0b2545;
+    --muted:#6b7280;
+    --bg:#f9fbff;
+    --frame: var(--navy);
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; padding:20px; background:var(--bg); color:var(--text); font-family:Arial, Helvetica, sans-serif;
+    display:flex; align-items:center; justify-content:center; min-height:100vh;
+  }
+  .page{
+    width:100%; max-width:840px; background:#fff; border:4px solid var(--frame); border-radius:18px;
+    padding:24px 20px; box-shadow:0 10px 28px rgba(0,0,0,.08);
+  }
+  header{ text-align:center; }
+  .logo{ width:150px; height:auto; margin:6px auto 8px; display:block; }
+  .wordmark{ width:360px; max-width:86%; height:auto; display:block; margin:0 auto 8px; }
+  .ar-name{ font-size:16px; margin:2px 0 8px; color:var(--navy); font-weight:700; }
+  .subtitle{ color:#9aa3ad; font-weight:400; font-size:14px; margin:0 0 8px; letter-spacing:.2px; }
+
+  .about{ margin:18px auto 6px; max-width:760px; padding:0 10px; }
+  .about h3{ margin:6px 0 10px; font-size:18px; color:var(--navy); text-align:center; }
+  .about .cols{ display:grid; grid-template-columns:1fr; gap:12px; }
+  .about .en{ text-align:left; }
+  .about .ar{ direction:rtl; text-align:right; }
+  .about p{ font-size:15px; line-height:1.7; margin:0; }
+
+  .links{ display:grid; grid-template-columns:1fr; gap:10px; max-width:520px; margin:18px auto 0; }
+  .links a{ display:block; text-decoration:none; padding:12px 14px; border-radius:10px; background:var(--navy); color:#fff; font-weight:700; font-size:14px; }
+
+  footer{ text-align:center; margin:18px 0 6px; color:#7a8694; font-size:12px; }
+
+  @media (min-width:760px){
+    .logo{ width:164px }
+    .wordmark{ width:400px }
+    .about .cols{ grid-template-columns:1fr 1fr; gap:18px; }
+  }
+</style>
+</head>
+<body>
+  <main class="page" role="main" aria-label="Company landing page for QR">
+    <header>
+      <!-- Top Logo -->
+      <img class="logo" src="circle-logo.svg" alt="Nasim Al Bahr circular logo">
+      <!-- Wordmark under logo -->
+      <img class="wordmark" src="nasim-al-bahr-wordmark.svg" alt="NASIM AL BAHR TRADING wordmark">
+      <!-- Arabic company name under wordmark -->
+      <div class="ar-name">نسيم البحر للتجارة م.م.ذ.ش</div>
+      <!-- Thin grey subtitle -->
+      <div class="subtitle">Paper &amp; Paperboard Import &amp; Export</div>
+    </header>
+
+    <section class="about" aria-label="About Us">
+      <h3>About Us</h3>
+      <div class="cols">
+        <div class="en">
+          <p>
+            NASIM AL BAHR TRADING L.L.C is a leading import and export company based in the United Arab Emirates, specializing in high-quality paper and paperboard products. We provide comprehensive trading solutions, connecting suppliers and buyers across international markets with excellence and reliability.
+          </p>
+        </div>
+        <div class="ar">
+          <p>
+            شركة نسيم البحر للتجارة ذ.م.م هي شركة رائدة في مجال استيراد وتصدير الورق والكرتون في دولة الإمارات العربية المتحدة. نتخصص في توفير منتجات الورق والكرتون عالية الجودة ونقدم حلولاً تجارية شاملة تربط الموردين والمشترين في الأسواق العالمية بكل احترافية وموثوقية.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="links" aria-label="Company contact links">
+      <a href="mailto:parsa.nasimalbahr@gmail.com">Sales Email</a>
+      <a href="mailto:nasimalbahrtrading@gmail.com">General Email</a>
+      <a href="https://wa.me/971585293719">WhatsApp</a>
+      <a href="#" target="_blank" rel="noopener">Website</a>
+    </nav>
+
+    <footer>
+      “The Breeze of Trading Sea”
+    </footer>
+  </main>
+</body>
+</html>

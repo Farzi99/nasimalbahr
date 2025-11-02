@@ -1,0 +1,17 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" aria-label="NASIM AL BAHR TRADING L.L.C">
+<defs>
+<circle id="shape-circle" cx="200" cy="200" r="180"></circle>
+<clipPath id="clip-circle"><use href="#shape-circle" /></clipPath>
+<linearGradient id="grad-bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0%" stop-color="#E6F4FF" />
+<stop offset="100%" stop-color="#F4FBFF" />
+</linearGradient>
+</defs>
+<use href="#shape-circle" fill="url(#grad-bg)"></use>
+<g clip-path="url(#clip-circle)">
+<path d="M20 170 C 80 140, 140 160, 200 150 C 260 140, 320 120, 380 150 L 380 190 C 320 160, 260 180, 200 190 C 140 200, 80 180, 20 200 Z" fill="#56CCF2" opacity="0.95"></path>
+<path d="M20 210 C 90 180, 140 210, 200 200 C 260 190, 300 200, 380 220 L 380 260 C 300 240, 260 230, 200 240 C 140 250, 90 230, 20 260 Z" fill="#2D9CDB" opacity="0.9"></path>
+<path d="M20 260 C 110 230, 160 260, 200 260 C 260 260, 300 260, 380 280 L 380 330 C 300 310, 260 300, 200 300 C 160 300, 110 300, 20 330 Z" fill="#0A4D6C" opacity="0.95"></path>
+</g>
+<use href="#shape-circle" fill="none" stroke="#0A4D6C" stroke-opacity="0.12" stroke-width="6"></use>
+</svg>
