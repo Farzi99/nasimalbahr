@@ -5,122 +5,64 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Nasim Al Bahr Trading L.L.C</title>
 
+<!-- ✅ GA4: gtag.js -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DF99XWXXV4"></script>
+<script>
+  // Debug mode via URL (?debug_mode=1) or hardcoded true (can disable in production)
+  const urlParams = new URLSearchParams(location.search);
+  const debugFromUrl = urlParams.get('debug_mode') === '1';
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+
+  gtag('js', new Date());
+  gtag('config', 'G-DF99XWXXV4', {
+    'debug_mode': true || debugFromUrl, // برای انتشار نهایی می‌توانید true را به false تغییر دهید
+    // 'send_page_view': true // به‌صورت پیش‌فرض فعال است
+  });
+</script>
+
 <style>
-
-  :root {
-    --navy:#003366;
-    --orange:#ff7a00;
-    --text:#0b2545;
-    --bg:#f9fbff;
-    --frame:var(--navy);
-    --card:#ffffff;
-  }
-
-  body.dark {
-    --navy:#003366;
-    --text:#e5e7eb;
-    --bg:#0b1220;
-    --frame:#ffffff;
-    --card:#111827;
-  }
-
+  :root { --navy:#003366; --orange:#ff7a00; --text:#0b2545; --bg:#f9fbff; --frame:var(--navy); --card:#ffffff; }
+  body.dark { --navy:#003366; --text:#e5e7eb; --bg:#0b1220; --frame:#ffffff; --card:#111827; }
   body {
     margin:0; padding:14px; background:var(--bg); color:var(--text);
     font-family:Arial, Helvetica, sans-serif;
     display:flex; align-items:center; justify-content:center;
     transition:background .3s, color .3s;
   }
-
-  .page {
-    width:100%; max-width:620px; background:var(--card);
-    border:3px solid var(--frame); border-radius:14px;
-    padding:18px 16px;
+  .page { width:100%; max-width:620px; background:var(--card);
+    border:3px solid var(--frame); border-radius:14px; padding:18px 16px;
     box-shadow:0 6px 18px rgba(0,0,0,.05);
   }
-
   header { text-align:center; }
-
-  .logo {
-    width:120px; margin:4px auto 10px; display:block;
-  }
-
-  .company-en-mid {
-    font-size:14px; margin:4px 0; font-weight:600; color:var(--navy);
-  }
-
-  .ar-name {
-    font-size:15px; margin:4px 0 6px; color:var(--navy); font-weight:700;
-  }
-
+  .logo { width:120px; margin:4px auto 10px; display:block; }
+  .company-en-mid { font-size:14px; margin:4px 0; font-weight:600; color:var(--navy); }
+  .ar-name { font-size:15px; margin:4px 0 6px; color:var(--navy); font-weight:700; }
   body.dark .company-en-mid,
-  body.dark .ar-name {
-    color:#ffffff !important;
-  }
-
-  .subtitle {
-    color:#9aa3ad; font-size:13px; margin:0 0 14px;
-  }
-
+  body.dark .ar-name { color:#ffffff !important; }
+  .subtitle { color:#9aa3ad; font-size:13px; margin:0 0 14px; }
   .spacer { height:16px; }
-
-  .contact h3 {
-    margin:4px 0 10px;
-    font-size:16px; color:var(--orange); text-align:center;
-  }
-
-  .links {
-    display:grid; gap:8px;
-    margin:10px auto 0;
-    width:100%; max-width:420px;
-  }
-
+  .contact h3 { margin:4px 0 10px; font-size:16px; color:var(--orange); text-align:center; }
+  .links { display:grid; gap:8px; margin:10px auto 0; width:100%; max-width:420px; }
   .links a {
-    display:block;
-    padding:12px 14px;
-    border-radius:10px;
-    background:var(--navy);
-    color:#fff;
-    font-weight:700; font-size:14px;
-    text-align:center;
-    text-decoration:none;
+    display:block; padding:12px 14px; border-radius:10px; background:var(--navy);
+    color:#fff; font-weight:700; font-size:14px; text-align:center; text-decoration:none;
   }
-
-  body.dark .links a {
-    background:#ffffff;
-    color:#003366 !important;
-    border:2px solid #003366;
-  }
-
-  .about h3 {
-    margin:4px 0 10px;
-    font-size:16px; color:var(--orange); text-align:center;
-  }
-
-  .about p {
-    font-size:14px; line-height:1.65; margin:0 0 12px;
-  }
-
+  body.dark .links a { background:#ffffff; color:#003366 !important; border:2px solid #003366; }
+  .about h3 { margin:4px 0 10px; font-size:16px; color:var(--orange); text-align:center; }
+  .about p { font-size:14px; line-height:1.65; margin:0 0 12px; }
   .about .ar { direction:rtl; }
-
-  footer {
-    text-align:center; margin:14px 0 4px;
-    color:#7a8694; font-size:11px;
-  }
-
+  footer { text-align:center; margin:14px 0 4px; color:#7a8694; font-size:11px; }
   .dark-toggle {
-    position:fixed; top:14px; right:14px;
-    width:40px; height:40px; display:grid; place-items:center;
-    background:var(--card); color:var(--text);
-    border:2px solid var(--frame); border-radius:999px;
-    cursor:pointer;
+    position:fixed; top:14px; right:14px; width:40px; height:40px; display:grid; place-items:center;
+    background:var(--card); color:var(--text); border:2px solid var(--frame); border-radius:999px; cursor:pointer;
     box-shadow:0 4px 12px rgba(0,0,0,.15);
   }
-
   .icon { width:20px; height:20px; }
   .icon-sun { display:none; }
   body.dark .icon-moon { display:none; }
   body.dark .icon-sun { display:block; }
-
 </style>
 </head>
 
@@ -149,10 +91,10 @@
 <section class="contact">
   <h3>Contact Us</h3>
   <nav class="links">
-    <a href="mailto:parsa.nasimalbahr@gmail.com">Sales Email</a>
-    <a href="mailto:nasimalbahrtrading@gmail.com">General Email</a>
-    <a href="https://wa.me/971585293719">WhatsApp</a>
-    <a href="#">Website</a>
+    <a href="mailto:parsa.nasimalbahr@gmail.com" id="link-sales">Sales Email</a>
+    <a href="mailto:nasimalbahrtrading@gmail.com" id="link-general">General Email</a>
+    <a href="https://wa.me/971585293719" id="link-whatsapp">WhatsApp</a>
+    <a href="#" id="link-website">Website</a>
   </nav>
 </section>
 
@@ -160,9 +102,6 @@
 
 <section class="about">
   <h3>About Us</h3>
-
-  <!-- ✅ فاصله اینجا حذف شد -->
-
   <p>
     NASIM AL BAHR TRADING L.L.C is a UAE-based international trading company engaged in global
     import and export services. We connect suppliers and buyers across diverse markets, providing
@@ -170,14 +109,12 @@
     smooth and efficient cross-border transactions. Our mission is to deliver flexible, trustworthy,
     and efficient trading solutions tailored to the needs of international partners.
   </p>
-
   <p class="ar">
     شركة نسيم البحر للتجارة ذ.م.م هي شركة تجارة دولية مقرّها دولة الإمارات العربية المتحدة، تعمل في
     مجالات الاستيراد والتصدير عبر مختلف الأسواق العالمية. نربط المورّدين والمشترين في قطاعات متعددة،
     ونوفّر خدمات لوجستية موثوقة، وحلول توريد فعّالة، ودعمًا تجاريًا احترافيًا لضمان عمليات سلسة عبر الحدود.
     هدفنا هو تقديم خدمات تجارية مرنة وموثوقة تلبي احتياجات الشركاء الدوليين.
   </p>
-
 </section>
 
 <footer>“The Breeze of Trading Sea”</footer>
@@ -187,8 +124,53 @@
 <script>
 function toggleDark(){
   document.body.classList.toggle('dark');
+  try {
+    const theme = document.body.classList.contains('dark') ? 'dark' : 'light';
+    // ثبت رویداد تغییر تم
+    if (typeof gtag === 'function') {
+      gtag('event', 'toggle_dark_mode', { theme });
+    }
+  } catch(e) {}
 }
-</script>
 
-</body>
-</html>
+// ---- GA4: Click events ----
+(function(){
+  function trackAndFollow(eventName, params, href, target){
+    let navigated = false;
+    const navigate = () => {
+      if (navigated) return;
+      navigated = true;
+      if (target === '_blank') {
+        window.open(href, '_blank');
+      } else {
+        window.location.href = href;
+      }
+    };
+    try {
+      if (typeof gtag === 'function') {
+        gtag('event', eventName, Object.assign({}, params, {
+          event_callback: navigate,
+          event_timeout: 1500
+        }));
+        // برای سازگاری با نام قبلی اشتباه 'click_whatsap'
+        if (eventName === 'click_whatsapp') {
+          gtag('event', 'click_whatsap', Object.assign({}, params, {
+            event_timeout: 1500
+          }));
+        }
+        // اگر callback فراخوانی نشد، fallback
+        setTimeout(navigate, 1600);
+      } else {
+        navigate();
+      }
+    } catch(e){
+      navigate();
+    }
+  }
+
+  function attach(id, handler){
+    const el = document.getElementById(id);
+    if (el) el.addEventListener('click', function(ev){
+      // اجازه بده با JS هدایت کنیم تا event ارسال شود
+      ev.preventDefault();
+      cons
