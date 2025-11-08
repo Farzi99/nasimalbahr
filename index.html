@@ -121,7 +121,7 @@
   body.dark .icon-moon { display:none; }
   body.dark .icon-sun { display:block; }
 
-  
+</style>
 </head>
 
 <body>
@@ -188,24 +188,6 @@
 function toggleDark(){
   document.body.classList.toggle('dark');
 }
-</script>
-<script>
-  function gtag(){window.dataLayer = window.dataLayer || []; dataLayer.push(arguments);}
-
-  function bindEvent(id, eventName, params = {}) {
-    const el = document.getElementById(id);
-    if (!el) return;
-    el.addEventListener('click', () => {
-      gtag('event', eventName, params);
-    });
-  }
-
-  // نمونه‌ها: idها را با واقعی‌ها عوض کن
-  bindEvent('btn-whatsapp', 'click_whatsapp', {section: 'links'});
-  bindEvent('btn-sales-email', 'click_email', {type: 'sales'});
-  bindEvent('btn-general-email', 'click_email', {type: 'general'});
-  bindEvent('btn-website', 'click_website', {destination: 'main_site'});
-  bindEvent('toggle-darkmode', 'toggle_dark_mode', {mode: 'switch'});
 </script>
 
 </body>
