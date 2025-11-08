@@ -121,15 +121,20 @@
   body.dark .icon-moon { display:none; }
   body.dark .icon-sun { display:block; }
 
-</style>
-<!-- Google tag (gtag.js) -->
+<!-- داخل <head> -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DF99XWXXV4"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-DF99XWXXV4'); // page_view خودکار
+
+  // حالت عادی
+  gtag('config', 'G-DF99XWXXV4');
+
+  // برای تست: دیباگ‌مود این دستگاه
+  gtag('config', 'G-DF99XWXXV4', { debug_mode: true });
 </script>
+
   
 </head>
 
